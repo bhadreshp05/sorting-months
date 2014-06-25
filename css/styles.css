@@ -1,0 +1,8 @@
+/*======================================
+=            Sorting Months            =
+======================================*/
+.sorting-months .months { border: 5px solid #000; padding: 5px; }
+.sorting-months .winter { background-color: #fff; }
+.sorting-months .spring { background-color: green; }
+.sorting-months .summer { background-color: orange; }
+.sorting-months .fall   { background-color: brown; }

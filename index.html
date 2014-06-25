@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en" ng-app="myApp">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Sorting Months Using AngularJS</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="sorting-months">
+
+	<div class="container">
+		
+		<h1>Sorting Months using AngularJS</h1>
+		
+		<hr>
+
+		<section ng-controller="myCtrl">
+			<div class="months" 
+				 ng-class="{'winter': month.season == 'winter', 
+					'summer': month.season == 'summer', 
+					'spring': month.season == 'spring', 
+					'fall': month.season == 'fall'}" 
+				 ng-repeat="month in months | orderBy: 'ordinal'">
+				<h1>{{month.english}}</h1>
+				<h2>French word: {{month.french}}</h2>
+				<h2>Number of Days: {{month.days}}</h2>
+			</div>
+		</section>
+		
+		<br>
+
+	</div>
+
+	<script src="js/angular.min.js"></script>
+	<script src="js/sorting-months.js"></script>
+</body>
+</html>
+
