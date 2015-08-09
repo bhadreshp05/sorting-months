@@ -1,9 +1,9 @@
 angular.module('myApp', []).
-	
+
 	controller('myCtrl', function($scope) {
-	   
-	   var months = [ 
-		
+
+	   var months = [
+
 		{
 			english: 'August',
 	    	french: 'Aout',
@@ -23,17 +23,17 @@ angular.module('myApp', []).
 		    french: 'Fevrier',
 		    days: 28,
 		    ordinal: 2,
-		   season: 'winter'
+		    season: 'winter'
 		},
 
-		{		english: 'April',
+		{	english: 'April',
 	    	french: 'Avril',
 	    	days: 30,
 	    	ordinal: 4,
 	   		season: 'spring'
 		},
 
-		{		english: 'May',
+		{	english: 'May',
 	    	french: 'Mai',
 	    	days: 31,
 	    	ordinal: 5,
@@ -89,7 +89,7 @@ angular.module('myApp', []).
 	   		season: 'summer'
 	   	}
 
-	];  
+	];
 
 	$scope.months = months;
 
